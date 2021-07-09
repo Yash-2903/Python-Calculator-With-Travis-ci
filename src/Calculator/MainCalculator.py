@@ -1,25 +1,9 @@
-def addition(a, b):
-    return int(a) + int(b)
-
-
-def subtraction(a, b):
-    return int(b) - int(a)
-
-
-def multiplication(a, b):
-    return int(a) * int(b)
-
-
-def division(a, b):
-    return int(b) / int(a)
-
-
-def square(a):
-    return int(a) * int(a)
-
-
-def squareRoot(a):
-    return int(a) ** (1 / 2)
+from Addition import addition
+from Subtraction import subtraction
+from Multiplication import  multiplication
+from Division import division
+from Square import square
+from SquareRoot import squareRoot
 
 
 class Calc:
