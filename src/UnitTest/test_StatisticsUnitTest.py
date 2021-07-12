@@ -22,6 +22,8 @@ class MyTestCase(unittest.TestCase):
     def test_mean_calculator(self):
         self.assertEqual(self.statistics.mean(self.testData), 6.0)
 
+    def test_median_calculator(self):
+        self.assertEqual(self.statistics.median(self.testData), 6)
 
     def test_mode_calculator(self):
         self.assertEqual(self.statistics.mode(self.testData), [9])
