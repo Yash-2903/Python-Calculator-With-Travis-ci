@@ -3,7 +3,6 @@ from src.Statistics.Statistics import Statistics
 from src.CSVReader.CSVReader import CSVReader
 from src.StaticProperties.StaticVariable import StaticVariable
 from numpy import var, std
-from pprint import pprint
 
 
 class MyTestCase(unittest.TestCase):
@@ -28,8 +27,12 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statistics.mode(self.testData), [9])
 
     def test_variance_method(self):
-        var_test_val = (var(self.testData))
-        self.assertEqual(self.statistics.variance(self.testData), var_test_val)
+        varTestValue = (var(self.testData))
+        self.assertEqual(self.statistics.variance(self.testData), varTestValue)
+
+    def test_standard_deviation(self):
+        stdTestValue = (std(self.testData))
+        self.assertAlmostEqual(self.statistics.standard_deviation(self.testData), stdTestValue)
 
 
 if __name__ == '__main__':
