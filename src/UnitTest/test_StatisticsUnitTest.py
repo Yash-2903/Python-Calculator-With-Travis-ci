@@ -23,5 +23,9 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statistics.mean(self.testData), 6.0)
 
 
+    def test_mode_calculator(self):
+        self.assertEqual(self.statistics.mode(self.testData), [9])
+
+
 if __name__ == '__main__':
     unittest.main()
