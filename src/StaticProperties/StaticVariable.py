@@ -6,6 +6,7 @@ class StaticVariable:
     unitTestDivision = "./src/UnitTest/Data/Unit_Test_Division.csv"
     unitTestSquare = "./src/UnitTest/Data/Unit_Test_Square.csv"
     unitTestSquareRoot = "./src/UnitTest/Data/Unit_Test_SquareRoot.csv"
+    unitTestStatistics = "./src/UnitTest/Data/Unit_Test_Statistics.csv"
     value1 = "Value 1"
     value2 = "Value 2"
     result = "Result"
