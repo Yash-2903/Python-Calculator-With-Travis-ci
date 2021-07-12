@@ -2,6 +2,8 @@ import unittest
 from src.Statistics.Statistics import Statistics
 from src.CSVReader.CSVReader import CSVReader
 from src.StaticProperties.StaticVariable import StaticVariable
+from numpy import var, std
+from pprint import pprint
 
 
 class MyTestCase(unittest.TestCase):
@@ -10,14 +12,11 @@ class MyTestCase(unittest.TestCase):
         self.test_stat_data = CSVReader(StaticVariable.unitTestStatistics).data
         self.testData = [int(row['Value']) for row in self.test_stat_data]
 
-
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
 
-
     def test_decorator_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
-
 
     def test_mean_calculator(self):
         self.assertEqual(self.statistics.mean(self.testData), 6.0)
@@ -27,6 +26,10 @@ class MyTestCase(unittest.TestCase):
 
     def test_mode_calculator(self):
         self.assertEqual(self.statistics.mode(self.testData), [9])
+
+    def test_variance_method(self):
+        var_test_val = (var(self.testData))
+        self.assertEqual(self.statistics.variance(self.testData), var_test_val)
 
 
 if __name__ == '__main__':
