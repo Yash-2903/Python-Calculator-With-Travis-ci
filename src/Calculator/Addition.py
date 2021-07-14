@@ -1,2 +1,9 @@
+from src.Calculator.ValidateException import exceptions
+
+
 def addition(a, b):
-    return int(a) + int(b)
+    err = exceptions(a, b)
+    if err:
+        return int(a) + int(b)
+    else:
+        return 0

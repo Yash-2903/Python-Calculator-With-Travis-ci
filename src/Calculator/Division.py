@@ -1,7 +1,13 @@
+from src.Calculator.ValidateException import exceptions
+
+
 def division(a, b):
     try:
-        div = float(b) / float(a)
-        return round(div, 9)
+        err = exceptions(a, b)
+        if err:
+            return float(b) / float(a)
+        else:
+            return 0
     except ZeroDivisionError as error:
-        error = "ERROR!  YOU CANNOT DIVIDE BY ZERO!"
+        error = "ERROR! you cannot divide by zero!!"
         return error
