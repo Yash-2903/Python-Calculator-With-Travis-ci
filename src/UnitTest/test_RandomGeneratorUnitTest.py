@@ -1,6 +1,6 @@
 import unittest
 from pprint import pprint
-from src.RandomGenerator.RandomGen import Random
+from src.RandomGenerator.MainRandomGen import Random
 
 
 class MyTestCase(unittest.TestCase):
@@ -10,7 +10,6 @@ class MyTestCase(unittest.TestCase):
         self.end = 100
         self.length = 3
         self.seed = 5
-        self.num_val = 3
 
     def test_instantiate_calculator_self(self):
         self.assertIsInstance(self.random, Random)

@@ -7,6 +7,10 @@ class StaticVariable:
     unitTestSquare = "./src/UnitTest/Data/Unit_Test_Square.csv"
     unitTestSquareRoot = "./src/UnitTest/Data/Unit_Test_SquareRoot.csv"
     unitTestStatistics = "./src/UnitTest/Data/Unit_Test_Statistics.csv"
+    value = "Value"
     value1 = "Value 1"
     value2 = "Value 2"
     result = "Result"
+    Mean = 6.0
+    Median = 6
+    Mode = [9]
