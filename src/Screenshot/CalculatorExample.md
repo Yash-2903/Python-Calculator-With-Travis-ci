@@ -7,6 +7,12 @@
  ### Here is the Example of Unit test Addition run in Docker:- 
  ![Addition](https://github.com/Yash-2903/PythonCalc/blob/main/Images/Addition.JPG)
  
+ ### Here is the Example of Unit test Subtraction run in Docker:- 
+ ![Subtraction](https://github.com/Yash-2903/Python-Calculator-With-Travis-ci/blob/master/src/Screenshot/Subtraction.JPG)
+ 
+ ### Here is the Example of Unit test Multipilication run in Docker:- 
+ ![Multiplication](https://github.com/Yash-2903/Python-Calculator-With-Travis-ci/blob/master/src/Screenshot/Multiplication.JPG)
+ 
 ## Statistic Calculator Example:-
  
  ### Dashboard of Travis-ci Git ripository:- 
@@ -16,4 +22,4 @@
  ![Travis-ci-build-success](https://github.com/Yash-2903/Python-Calculator-With-Travis-ci/blob/master/src/Screenshot/Travis-ci-build-Success.JPG)
  
  ### Docker run Success:-
- ![Docker-run](https://github.com/Yash-2903/Python-Calculator-With-Travis-ci/blob/master/src/Screenshot/Test%20Run.JPG)
+ ![Docker-run](https://github.com/Yash-2903/Python-Calculator-With-Travis-ci/blob/master/src/Screenshot/SuccessTest.JPG)
